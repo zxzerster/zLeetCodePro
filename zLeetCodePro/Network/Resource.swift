@@ -13,7 +13,7 @@ enum APIError: Error, Equatable {
     case error(Error)
     case requestError(Int)
     case invalidResponse
-    case decode(Error?)
+    case decode
     case empty
     case badGraphQuery
     case interrupted
@@ -40,6 +40,10 @@ extension Resource {
             let parsed = try? self.parse(data, response)
             return parsed.flatMap(transform)
         }
+    }
+    
+    var combinable: combined<Type> {
+        return .single(self)
     }
 }
 
