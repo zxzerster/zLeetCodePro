@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DCBDE6023018CB700C3E6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */; };
+		5DCBDE6223018CB700C3E6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6123018CB700C3E6CD /* SceneDelegate.swift */; };
+		5DCBDE6423018CB700C3E6CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6323018CB700C3E6CD /* ContentView.swift */; };
+		5DCBDE6623018CB800C3E6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6523018CB800C3E6CD /* Assets.xcassets */; };
+		5DCBDE6923018CB800C3E6CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6823018CB800C3E6CD /* Preview Assets.xcassets */; };
+		5DCBDE6C23018CB800C3E6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6A23018CB800C3E6CD /* LaunchScreen.storyboard */; };
+		5DCBDE7723018CB800C3E6CD /* zLeetCodeProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE7623018CB800C3E6CD /* zLeetCodeProTests.swift */; };
+		5DCBDE8223018CB800C3E6CD /* zLeetCodeProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE8123018CB800C3E6CD /* zLeetCodeProUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DCBDE7323018CB800C3E6CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCBDE5423018CB700C3E6CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCBDE5B23018CB700C3E6CD;
+			remoteInfo = zLeetCodePro;
+		};
+		5DCBDE7E23018CB800C3E6CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCBDE5423018CB700C3E6CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCBDE5B23018CB700C3E6CD;
+			remoteInfo = zLeetCodePro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5DCBDE5C23018CB700C3E6CD /* zLeetCodePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zLeetCodePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DCBDE6123018CB700C3E6CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DCBDE6323018CB700C3E6CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5DCBDE6523018CB800C3E6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DCBDE6823018CB800C3E6CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5DCBDE6B23018CB800C3E6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DCBDE6D23018CB800C3E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCBDE7223018CB800C3E6CD /* zLeetCodeProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zLeetCodeProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCBDE7623018CB800C3E6CD /* zLeetCodeProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zLeetCodeProTests.swift; sourceTree = "<group>"; };
+		5DCBDE7823018CB800C3E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCBDE7D23018CB800C3E6CD /* zLeetCodeProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zLeetCodeProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCBDE8123018CB800C3E6CD /* zLeetCodeProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zLeetCodeProUITests.swift; sourceTree = "<group>"; };
+		5DCBDE8323018CB800C3E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DCBDE5923018CB700C3E6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCBDE6F23018CB800C3E6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCBDE7A23018CB800C3E6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DCBDE5323018CB700C3E6CD = {
+			isa = PBXGroup;
+			children = (
+				5DCBDE5E23018CB700C3E6CD /* zLeetCodePro */,
+				5DCBDE7523018CB800C3E6CD /* zLeetCodeProTests */,
+				5DCBDE8023018CB800C3E6CD /* zLeetCodeProUITests */,
+				5DCBDE5D23018CB700C3E6CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DCBDE5D23018CB700C3E6CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBDE5C23018CB700C3E6CD /* zLeetCodePro.app */,
+				5DCBDE7223018CB800C3E6CD /* zLeetCodeProTests.xctest */,
+				5DCBDE7D23018CB800C3E6CD /* zLeetCodeProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DCBDE5E23018CB700C3E6CD /* zLeetCodePro */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */,
+				5DCBDE6123018CB700C3E6CD /* SceneDelegate.swift */,
+				5DCBDE6323018CB700C3E6CD /* ContentView.swift */,
+				5DCBDE6523018CB800C3E6CD /* Assets.xcassets */,
+				5DCBDE6A23018CB800C3E6CD /* LaunchScreen.storyboard */,
+				5DCBDE6D23018CB800C3E6CD /* Info.plist */,
+				5DCBDE6723018CB800C3E6CD /* Preview Content */,
+			);
+			path = zLeetCodePro;
+			sourceTree = "<group>";
+		};
+		5DCBDE6723018CB800C3E6CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBDE6823018CB800C3E6CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5DCBDE7523018CB800C3E6CD /* zLeetCodeProTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBDE7623018CB800C3E6CD /* zLeetCodeProTests.swift */,
+				5DCBDE7823018CB800C3E6CD /* Info.plist */,
+			);
+			path = zLeetCodeProTests;
+			sourceTree = "<group>";
+		};
+		5DCBDE8023018CB800C3E6CD /* zLeetCodeProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBDE8123018CB800C3E6CD /* zLeetCodeProUITests.swift */,
+				5DCBDE8323018CB800C3E6CD /* Info.plist */,
+			);
+			path = zLeetCodeProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DCBDE5B23018CB700C3E6CD /* zLeetCodePro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCBDE8623018CB800C3E6CD /* Build configuration list for PBXNativeTarget "zLeetCodePro" */;
+			buildPhases = (
+				5DCBDE5823018CB700C3E6CD /* Sources */,
+				5DCBDE5923018CB700C3E6CD /* Frameworks */,
+				5DCBDE5A23018CB700C3E6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zLeetCodePro;
+			productName = zLeetCodePro;
+			productReference = 5DCBDE5C23018CB700C3E6CD /* zLeetCodePro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DCBDE7123018CB800C3E6CD /* zLeetCodeProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCBDE8923018CB800C3E6CD /* Build configuration list for PBXNativeTarget "zLeetCodeProTests" */;
+			buildPhases = (
+				5DCBDE6E23018CB800C3E6CD /* Sources */,
+				5DCBDE6F23018CB800C3E6CD /* Frameworks */,
+				5DCBDE7023018CB800C3E6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCBDE7423018CB800C3E6CD /* PBXTargetDependency */,
+			);
+			name = zLeetCodeProTests;
+			productName = zLeetCodeProTests;
+			productReference = 5DCBDE7223018CB800C3E6CD /* zLeetCodeProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DCBDE7C23018CB800C3E6CD /* zLeetCodeProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCBDE8C23018CB800C3E6CD /* Build configuration list for PBXNativeTarget "zLeetCodeProUITests" */;
+			buildPhases = (
+				5DCBDE7923018CB800C3E6CD /* Sources */,
+				5DCBDE7A23018CB800C3E6CD /* Frameworks */,
+				5DCBDE7B23018CB800C3E6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCBDE7F23018CB800C3E6CD /* PBXTargetDependency */,
+			);
+			name = zLeetCodeProUITests;
+			productName = zLeetCodeProUITests;
+			productReference = 5DCBDE7D23018CB800C3E6CD /* zLeetCodeProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DCBDE5423018CB700C3E6CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "周向真";
+				TargetAttributes = {
+					5DCBDE5B23018CB700C3E6CD = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					5DCBDE7123018CB800C3E6CD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 5DCBDE5B23018CB700C3E6CD;
+					};
+					5DCBDE7C23018CB800C3E6CD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 5DCBDE5B23018CB700C3E6CD;
+					};
+				};
+			};
+			buildConfigurationList = 5DCBDE5723018CB700C3E6CD /* Build configuration list for PBXProject "zLeetCodePro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DCBDE5323018CB700C3E6CD;
+			productRefGroup = 5DCBDE5D23018CB700C3E6CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DCBDE5B23018CB700C3E6CD /* zLeetCodePro */,
+				5DCBDE7123018CB800C3E6CD /* zLeetCodeProTests */,
+				5DCBDE7C23018CB800C3E6CD /* zLeetCodeProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DCBDE5A23018CB700C3E6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCBDE6C23018CB800C3E6CD /* LaunchScreen.storyboard in Resources */,
+				5DCBDE6923018CB800C3E6CD /* Preview Assets.xcassets in Resources */,
+				5DCBDE6623018CB800C3E6CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCBDE7023018CB800C3E6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCBDE7B23018CB800C3E6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DCBDE5823018CB700C3E6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCBDE6023018CB700C3E6CD /* AppDelegate.swift in Sources */,
+				5DCBDE6223018CB700C3E6CD /* SceneDelegate.swift in Sources */,
+				5DCBDE6423018CB700C3E6CD /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCBDE6E23018CB800C3E6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCBDE7723018CB800C3E6CD /* zLeetCodeProTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCBDE7923018CB800C3E6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCBDE8223018CB800C3E6CD /* zLeetCodeProUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DCBDE7423018CB800C3E6CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCBDE5B23018CB700C3E6CD /* zLeetCodePro */;
+			targetProxy = 5DCBDE7323018CB800C3E6CD /* PBXContainerItemProxy */;
+		};
+		5DCBDE7F23018CB800C3E6CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCBDE5B23018CB700C3E6CD /* zLeetCodePro */;
+			targetProxy = 5DCBDE7E23018CB800C3E6CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DCBDE6A23018CB800C3E6CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCBDE6B23018CB800C3E6CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DCBDE8423018CB800C3E6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DCBDE8523018CB800C3E6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DCBDE8723018CB800C3E6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "zLeetCodePro/Preview\\ Content";
+				DEVELOPMENT_TEAM = 2K3PAR9T8H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = zLeetCodePro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxzerster.test.zLeetCodePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DCBDE8823018CB800C3E6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "zLeetCodePro/Preview\\ Content";
+				DEVELOPMENT_TEAM = 2K3PAR9T8H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = zLeetCodePro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxzerster.test.zLeetCodePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DCBDE8A23018CB800C3E6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2K3PAR9T8H;
+				INFOPLIST_FILE = zLeetCodeProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxzerster.test.zLeetCodeProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zLeetCodePro.app/zLeetCodePro";
+			};
+			name = Debug;
+		};
+		5DCBDE8B23018CB800C3E6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2K3PAR9T8H;
+				INFOPLIST_FILE = zLeetCodeProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxzerster.test.zLeetCodeProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zLeetCodePro.app/zLeetCodePro";
+			};
+			name = Release;
+		};
+		5DCBDE8D23018CB800C3E6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2K3PAR9T8H;
+				INFOPLIST_FILE = zLeetCodeProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxzerster.test.zLeetCodeProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zLeetCodePro;
+			};
+			name = Debug;
+		};
+		5DCBDE8E23018CB800C3E6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2K3PAR9T8H;
+				INFOPLIST_FILE = zLeetCodeProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxzerster.test.zLeetCodeProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zLeetCodePro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DCBDE5723018CB700C3E6CD /* Build configuration list for PBXProject "zLeetCodePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCBDE8423018CB800C3E6CD /* Debug */,
+				5DCBDE8523018CB800C3E6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCBDE8623018CB800C3E6CD /* Build configuration list for PBXNativeTarget "zLeetCodePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCBDE8723018CB800C3E6CD /* Debug */,
+				5DCBDE8823018CB800C3E6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCBDE8923018CB800C3E6CD /* Build configuration list for PBXNativeTarget "zLeetCodeProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCBDE8A23018CB800C3E6CD /* Debug */,
+				5DCBDE8B23018CB800C3E6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCBDE8C23018CB800C3E6CD /* Build configuration list for PBXNativeTarget "zLeetCodeProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCBDE8D23018CB800C3E6CD /* Debug */,
+				5DCBDE8E23018CB800C3E6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DCBDE5423018CB700C3E6CD /* Project object */;
+}
