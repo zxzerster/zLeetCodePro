@@ -13,8 +13,23 @@
 		5DCBDE6623018CB800C3E6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6523018CB800C3E6CD /* Assets.xcassets */; };
 		5DCBDE6923018CB800C3E6CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6823018CB800C3E6CD /* Preview Assets.xcassets */; };
 		5DCBDE6C23018CB800C3E6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6A23018CB800C3E6CD /* LaunchScreen.storyboard */; };
-		5DCBDE7723018CB800C3E6CD /* zLeetCodeProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE7623018CB800C3E6CD /* zLeetCodeProTests.swift */; };
+		5DCBDE7723018CB800C3E6CD /* zLeetCodeResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE7623018CB800C3E6CD /* zLeetCodeResourceTests.swift */; };
 		5DCBDE8223018CB800C3E6CD /* zLeetCodeProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE8123018CB800C3E6CD /* zLeetCodeProUITests.swift */; };
+		5DCBDE9223018E6500C3E6CD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9123018E6500C3E6CD /* Resource.swift */; };
+		5DCBDE9323018E6500C3E6CD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9123018E6500C3E6CD /* Resource.swift */; };
+		5DCBDE9423018E6500C3E6CD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9123018E6500C3E6CD /* Resource.swift */; };
+		5DCBDE962301920700C3E6CD /* Resource+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE952301920700C3E6CD /* Resource+Utils.swift */; };
+		5DCBDE972301920700C3E6CD /* Resource+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE952301920700C3E6CD /* Resource+Utils.swift */; };
+		5DCBDE982301920700C3E6CD /* Resource+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE952301920700C3E6CD /* Resource+Utils.swift */; };
+		5DCBDE9A23019AC200C3E6CD /* URLSession+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9923019AC200C3E6CD /* URLSession+Resource.swift */; };
+		5DCBDE9B23019AC200C3E6CD /* URLSession+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9923019AC200C3E6CD /* URLSession+Resource.swift */; };
+		5DCBDE9C23019AC200C3E6CD /* URLSession+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9923019AC200C3E6CD /* URLSession+Resource.swift */; };
+		5DCBDE9E2301A0A200C3E6CD /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9D2301A0A200C3E6CD /* APIServiceMock.swift */; };
+		5DCBDE9F2301A0A200C3E6CD /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9D2301A0A200C3E6CD /* APIServiceMock.swift */; };
+		5DCBDEA02301A0A200C3E6CD /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE9D2301A0A200C3E6CD /* APIServiceMock.swift */; };
+		5DCBDEA32301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
+		5DCBDEA42301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
+		5DCBDEA52301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +59,16 @@
 		5DCBDE6B23018CB800C3E6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DCBDE6D23018CB800C3E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DCBDE7223018CB800C3E6CD /* zLeetCodeProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zLeetCodeProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DCBDE7623018CB800C3E6CD /* zLeetCodeProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zLeetCodeProTests.swift; sourceTree = "<group>"; };
+		5DCBDE7623018CB800C3E6CD /* zLeetCodeResourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zLeetCodeResourceTests.swift; sourceTree = "<group>"; };
 		5DCBDE7823018CB800C3E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DCBDE7D23018CB800C3E6CD /* zLeetCodeProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zLeetCodeProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCBDE8123018CB800C3E6CD /* zLeetCodeProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zLeetCodeProUITests.swift; sourceTree = "<group>"; };
 		5DCBDE8323018CB800C3E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCBDE9123018E6500C3E6CD /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		5DCBDE952301920700C3E6CD /* Resource+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Utils.swift"; sourceTree = "<group>"; };
+		5DCBDE9923019AC200C3E6CD /* URLSession+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Resource.swift"; sourceTree = "<group>"; };
+		5DCBDE9D2301A0A200C3E6CD /* APIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMock.swift; sourceTree = "<group>"; };
+		5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,8 @@
 		5DCBDE5E23018CB700C3E6CD /* zLeetCodePro */ = {
 			isa = PBXGroup;
 			children = (
+				5DCBDEA12301BED400C3E6CD /* LeetCodeService */,
+				5DCBDE9023018E3C00C3E6CD /* Network */,
 				5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */,
 				5DCBDE6123018CB700C3E6CD /* SceneDelegate.swift */,
 				5DCBDE6323018CB700C3E6CD /* ContentView.swift */,
@@ -121,8 +143,9 @@
 		5DCBDE7523018CB800C3E6CD /* zLeetCodeProTests */ = {
 			isa = PBXGroup;
 			children = (
-				5DCBDE7623018CB800C3E6CD /* zLeetCodeProTests.swift */,
+				5DCBDE7623018CB800C3E6CD /* zLeetCodeResourceTests.swift */,
 				5DCBDE7823018CB800C3E6CD /* Info.plist */,
+				5DCBDE9D2301A0A200C3E6CD /* APIServiceMock.swift */,
 			);
 			path = zLeetCodeProTests;
 			sourceTree = "<group>";
@@ -134,6 +157,24 @@
 				5DCBDE8323018CB800C3E6CD /* Info.plist */,
 			);
 			path = zLeetCodeProUITests;
+			sourceTree = "<group>";
+		};
+		5DCBDE9023018E3C00C3E6CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBDE9123018E6500C3E6CD /* Resource.swift */,
+				5DCBDE952301920700C3E6CD /* Resource+Utils.swift */,
+				5DCBDE9923019AC200C3E6CD /* URLSession+Resource.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5DCBDEA12301BED400C3E6CD /* LeetCodeService */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */,
+			);
+			path = LeetCodeService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCBDE9E2301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
 				5DCBDE6023018CB700C3E6CD /* AppDelegate.swift in Sources */,
+				5DCBDE962301920700C3E6CD /* Resource+Utils.swift in Sources */,
+				5DCBDE9A23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
+				5DCBDE9223018E6500C3E6CD /* Resource.swift in Sources */,
 				5DCBDE6223018CB700C3E6CD /* SceneDelegate.swift in Sources */,
+				5DCBDEA32301BF0400C3E6CD /* LeetCodeService.swift in Sources */,
 				5DCBDE6423018CB700C3E6CD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DCBDE7723018CB800C3E6CD /* zLeetCodeProTests.swift in Sources */,
+				5DCBDEA42301BF0400C3E6CD /* LeetCodeService.swift in Sources */,
+				5DCBDE972301920700C3E6CD /* Resource+Utils.swift in Sources */,
+				5DCBDE7723018CB800C3E6CD /* zLeetCodeResourceTests.swift in Sources */,
+				5DCBDE9B23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
+				5DCBDE9F2301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
+				5DCBDE9323018E6500C3E6CD /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCBDEA52301BF0400C3E6CD /* LeetCodeService.swift in Sources */,
+				5DCBDE982301920700C3E6CD /* Resource+Utils.swift in Sources */,
 				5DCBDE8223018CB800C3E6CD /* zLeetCodeProUITests.swift in Sources */,
+				5DCBDE9C23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
+				5DCBDEA02301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
+				5DCBDE9423018E6500C3E6CD /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
