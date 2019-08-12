@@ -12,9 +12,9 @@ let resp = HTTPURLResponse()
 
 class APIServiceMock {
     static let shared = APIServiceMock()
-    
+
     init() { }
-    
+
     func load<Type>(from resource: Resource<Type>, completionHandler: (Result<Type, APIError>) -> Void) {
         sleep(1)
         
@@ -29,7 +29,7 @@ class APIServiceMock {
             completionHandler(.failure(.decode))
         }
     }
-    
+
     func load<Type>(from combined: combined<Type>, completionHandler: (Result<Type, APIError>) -> Void) {
         switch combined {
         case ._interrupt(let r):
@@ -58,6 +58,5 @@ class APIServiceMock {
                 }
             }
         }
-        
     }
 }
