@@ -37,9 +37,9 @@ class LeetCodeService {
 
 // MARK: - Leetcode: login related
 extension LeetCodeService {
-    func login(name: String, password: String, completionHandler: () -> Void) {
-        let url = URL(string: base)!.appendingPathComponent("/accounts/login/")
-        let _get = Resource<(String?, Bool)>(get: url) { (_, response) -> (String?, Bool) in
+    func login(name: String, password: String, completionHandler: @escaping (Result<UserInfo, APIError>) -> Void) {
+        let url = URL(string: base)!.appendingPathComponent("accounts/login/")
+        let _get = Resource<(String?, Bool)>(get: url) { (_, response) -> (String?, Bool)? in
             if response.statusCode == 302 {
                 return (nil, true)
             }
@@ -61,18 +61,23 @@ extension LeetCodeService {
             return (nil, false)
         }
         
-        let login = _get.combinable.next { (token, redirected) -> combined<Void> in
+        let login = _get.combinable.next { (token, redirected) -> combined<UserInfo> in
             if redirected {
-                // TODO: - Read token / sessionId / userInfo from Cookie storate and UserDefault
-                return combined.asInterrupt(.success(()))
+                // TODO: Handle redirect
+                let userInfo = UserInfo(token: token, session: nil)
+                return combined.asInterrupt(.success(userInfo))
+            }
+            
+            guard let token = token else {
+                return combined.asInterrupt(.failure(.empty))
             }
             
             let form = PostForm([
                 "password": password, "login": name, "csrfmiddlewaretoken": token
             ])
             let request = URLRequest(url: url, form: form)!
-            let _post = Resource<Void>(request: request) { (data, _) -> Void? in
-                return ()
+            let _post = Resource<UserInfo>(request: request) { (_, _) -> UserInfo? in
+                return self.readUserInfo(from: HTTPCookieStorage.shared.cookies(for: url))
             }
             
             return _post.combinable
@@ -81,13 +86,30 @@ extension LeetCodeService {
         session.request(from: login) { (result) in
             switch result {
             case .failure(let error):
-                // completionHandler(error)
-                print(error)
+                completionHandler(.failure(error))
             case .success(let r):
-                // completionHandler(r)
-                print("logged in")
+                completionHandler(.success(r))
             }
         }
+    }
+    
+    private func readUserInfo(from cookies: [HTTPCookie]?) -> UserInfo? {
+        guard let cookies = cookies else { return nil }
+        
+        var token: String?, session: String?
+        for c in cookies {
+            if c.name == "csrftoken" {
+                token = c.value
+            }
+            
+            if c.name == "LEETCODE_SESSION" {
+                session = c.value
+            }
+        }
+        
+        guard let t = token, let s = session else { return nil }
+        
+        return UserInfo(token: t, session: s)
     }
 }
 

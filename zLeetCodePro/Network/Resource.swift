@@ -27,7 +27,7 @@ struct Resource<Type> {
 
 // MARK: - Resource general functionalities
 extension Resource {
-    init(get: URL, parse: @
+    init(get: URL, parse: @escaping
         (Data, HTTPURLResponse) throws -> Type?) {
         var request = URLRequest(url: get)
         request.httpMethod = "GET"

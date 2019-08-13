@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D88EC8A2302E444007D33C8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* UserInfo.swift */; };
+		5D88EC8B2302E444007D33C8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* UserInfo.swift */; };
+		5D88EC8E2302E4AC007D33C8 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88EC8D2302E4AC007D33C8 /* Login.swift */; };
 		5DCBDE6023018CB700C3E6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */; };
 		5DCBDE6223018CB700C3E6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6123018CB700C3E6CD /* SceneDelegate.swift */; };
 		5DCBDE6423018CB700C3E6CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6323018CB700C3E6CD /* ContentView.swift */; };
@@ -30,6 +33,7 @@
 		5DCBDEA32301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
 		5DCBDEA42301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
 		5DCBDEA52301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
+		5DCBDEA82302D88600C3E6CD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D88EC8D2302E4AC007D33C8 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		5DCBDE5C23018CB700C3E6CD /* zLeetCodePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zLeetCodePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCBDE6123018CB700C3E6CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 		5DCBDE9923019AC200C3E6CD /* URLSession+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Resource.swift"; sourceTree = "<group>"; };
 		5DCBDE9D2301A0A200C3E6CD /* APIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMock.swift; sourceTree = "<group>"; };
 		5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeService.swift; sourceTree = "<group>"; };
+		5DCBDEA72302D88600C3E6CD /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D88EC8C2302E49D007D33C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D88EC8D2302E4AC007D33C8 /* Login.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5DCBDE5323018CB700C3E6CD = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +133,8 @@
 		5DCBDE5E23018CB700C3E6CD /* zLeetCodePro */ = {
 			isa = PBXGroup;
 			children = (
+				5D88EC8C2302E49D007D33C8 /* Views */,
+				5DCBDEA62302D86E00C3E6CD /* Models */,
 				5DCBDEA12301BED400C3E6CD /* LeetCodeService */,
 				5DCBDE9023018E3C00C3E6CD /* Network */,
 				5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */,
@@ -175,6 +191,14 @@
 				5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */,
 			);
 			path = LeetCodeService;
+			sourceTree = "<group>";
+		};
+		5DCBDEA62302D86E00C3E6CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBDEA72302D88600C3E6CD /* UserInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,12 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DCBDE9E2301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
+				5D88EC8E2302E4AC007D33C8 /* Login.swift in Sources */,
 				5DCBDE6023018CB700C3E6CD /* AppDelegate.swift in Sources */,
 				5DCBDE962301920700C3E6CD /* Resource+Utils.swift in Sources */,
 				5DCBDE9A23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
 				5DCBDE9223018E6500C3E6CD /* Resource.swift in Sources */,
 				5DCBDE6223018CB700C3E6CD /* SceneDelegate.swift in Sources */,
 				5DCBDEA32301BF0400C3E6CD /* LeetCodeService.swift in Sources */,
+				5DCBDEA82302D88600C3E6CD /* UserInfo.swift in Sources */,
 				5DCBDE6423018CB700C3E6CD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +354,7 @@
 				5DCBDE7723018CB800C3E6CD /* zLeetCodeResourceTests.swift in Sources */,
 				5DCBDE9B23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
 				5DCBDE9F2301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
+				5D88EC8A2302E444007D33C8 /* UserInfo.swift in Sources */,
 				5DCBDE9323018E6500C3E6CD /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +368,7 @@
 				5DCBDE8223018CB800C3E6CD /* zLeetCodeProUITests.swift in Sources */,
 				5DCBDE9C23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
 				5DCBDEA02301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
+				5D88EC8B2302E444007D33C8 /* UserInfo.swift in Sources */,
 				5DCBDE9423018E6500C3E6CD /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
