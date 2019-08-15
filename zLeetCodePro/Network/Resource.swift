@@ -13,7 +13,9 @@ enum APIError: Error, Equatable {
     case error(Error)
     case requestError(Int)
     case invalidResponse
-    case decode
+    case invalidQuery
+    case decode(Error)
+    case parse
     case empty
     case badGraphQuery
     case interrupted
@@ -49,12 +51,12 @@ extension Resource {
 }
 
 // MARK: - Resource for codable type
-extension Resource where Type: Codable {
+extension Resource where Type: Decodable {
     init(request: URLRequest) {
         self.request = request
         self.parse = { (data, response) -> Type? in
             guard response.statusCode == 200 else { return nil }
-            return try? JSONDecoder().decode(Type.self, from: data)
+            return try JSONDecoder().decode(Type.self, from: data)
         }
     }
     
@@ -68,6 +70,16 @@ extension Resource where Type: Codable {
             return try? JSONDecoder().decode(Type.self, from: data)
         }
     }
+    
+//    init(graphQLRequest: URLRequest) {
+//        self.request = graphQLRequest
+//        self.parse = { (data, response) -> Type? in
+//            guard response.statusCode == 200 else { return nil }
+//            
+//            let result = try? JSONDecoder().decode([String:[String: Type]].self, from: data)
+//            return result["data"]?["userStatus"]
+//        }
+//    }
 }
 
 // MARK: - Wrapper for resources working in combination: next / retry / interrupted in next or retry

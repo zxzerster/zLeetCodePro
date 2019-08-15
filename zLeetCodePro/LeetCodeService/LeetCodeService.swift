@@ -10,6 +10,10 @@ import Foundation
 
 class LeetCodeService {
     static let shared = LeetCodeService()
+    
+    let TOKEN_KEY = "csrftoken"
+    let SESSION_KEY = "LEETCODE_SESSION"
+    
     let base = "https://leetcode.com/"
     
     private var session: URLSession
@@ -19,10 +23,10 @@ class LeetCodeService {
         configuration.httpAdditionalHeaders = [
             "Referer": base,
             "Origin": base,
-            "X-Requested-With": "XMLHttpRequest",
+            "X-Requested-With": "XMLHttpRequest",  // No redirect
         ]
         
-        session = URLSession(configuration: configuration, delegate: SessionTaskDelegate.shared, delegateQueue: nil)
+        session = URLSession(configuration: configuration)
     }
     
     private func updateSession(withHeaders headers: [String: String]) {
@@ -37,47 +41,35 @@ class LeetCodeService {
 
 // MARK: - Leetcode: login related
 extension LeetCodeService {
-    func login(name: String, password: String, completionHandler: @escaping (Result<UserInfo, APIError>) -> Void) {
+    func login(name: String, password: String, completionHandler: @escaping (Result<LeetCodeSession, APIError>) -> Void) {
         let url = URL(string: base)!.appendingPathComponent("accounts/login/")
-        let _get = Resource<(String?, Bool)>(get: url) { (_, response) -> (String?, Bool)? in
-            if response.statusCode == 302 {
-                return (nil, true)
+        let _get = Resource<String>(get: url) { (_, response) -> String? in
+            guard let token = HTTPCookie.cookie(name: "csrftoken", from: response) else {
+                return nil
             }
             
-            guard let allHeadersFields = response.allHeaderFields as? [String: String] else {
-                return (nil, false)
-            }
+            self.updateSession(withHeaders: ["X-csrftoken": token])
             
-            let cookies = HTTPCookie.cookies(withResponseHeaderFields: allHeadersFields, for: url)
-            for cookie in cookies {
-                if cookie.name == "csrftoken" {
-                    let token = cookie.value
-                    self.updateSession(withHeaders: ["X-csrftoken": token])
-                    
-                    return (token, false)
-                }
-            }
-            
-            return (nil, false)
+            return token
         }
         
-        let login = _get.combinable.next { (token, redirected) -> combined<UserInfo> in
-            if redirected {
-                // TODO: Handle redirect
-                let userInfo = UserInfo(token: token, session: nil)
-                return combined.asInterrupt(.success(userInfo))
-            }
-            
+        let login = _get.combinable.next { (token: String?) -> combined<LeetCodeSession> in
             guard let token = token else {
-                return combined.asInterrupt(.failure(.empty))
+                return combined.asInterrupt(.failure(.invalidResponse))
             }
             
             let form = PostForm([
                 "password": password, "login": name, "csrfmiddlewaretoken": token
             ])
             let request = URLRequest(url: url, form: form)!
-            let _post = Resource<UserInfo>(request: request) { (_, _) -> UserInfo? in
-                return self.readUserInfo(from: HTTPCookieStorage.shared.cookies(for: url))
+            let _post = Resource<LeetCodeSession>(request: request) { (_, _) -> LeetCodeSession? in
+                guard let token = HTTPCookieStorage.shared.cookie(name: self.TOKEN_KEY, for: url),
+                    let session = HTTPCookieStorage.shared.cookie(name: self.SESSION_KEY, for: url) else {
+                        return nil
+                }
+                
+                self.updateSession(withHeaders: ["X-csrftoken": token])
+                return LeetCodeSession(token: token, session: session)
             }
             
             return _post.combinable
@@ -92,31 +84,23 @@ extension LeetCodeService {
             }
         }
     }
-    
-    private func readUserInfo(from cookies: [HTTPCookie]?) -> UserInfo? {
-        guard let cookies = cookies else { return nil }
-        
-        var token: String?, session: String?
-        for c in cookies {
-            if c.name == "csrftoken" {
-                token = c.value
-            }
-            
-            if c.name == "LEETCODE_SESSION" {
-                session = c.value
-            }
-        }
-        
-        guard let t = token, let s = session else { return nil }
-        
-        return UserInfo(token: t, session: s)
-    }
 }
 
-class SessionTaskDelegate: NSObject, URLSessionTaskDelegate {
-    static let shared = SessionTaskDelegate()
-    
-    func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
-        completionHandler(nil)
+extension LeetCodeService {
+    func graphQLQuery<Type: Decodable>(query: GraphQLObject, completionHandler: @escaping (Result<Type, APIError>) -> Void) {
+        guard let request = URLRequest(graph: query) else {
+            completionHandler(.failure(.invalidQuery))
+            return
+        }
+        
+        let resource = Resource<Type>(request: request)
+        session.request(from: resource) { (result) in
+            switch result {
+            case .failure(let error):
+                completionHandler(.failure(error))
+            case .success(let r):
+                completionHandler(.success(r))
+            }
+        }
     }
 }

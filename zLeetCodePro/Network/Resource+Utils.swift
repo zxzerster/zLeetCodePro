@@ -21,6 +21,17 @@ enum requestMethod<Body> {
     }
 }
 
+// MARK: - GraphQL query / mutation
+struct GraphQLObject: Encodable {
+    let operation: String = ""
+    let variables: [String] = []
+    let query: String
+    
+    func body() -> Data? {
+        return try? JSONEncoder().encode(self)
+    }
+}
+
 // MARK: - Util for contructing post form body
 struct PostForm {
     private let boundary:String = {
@@ -51,6 +62,7 @@ struct PostForm {
 
 // MARK: - Shortcut for contructing kinds of Resource Request
 extension URLRequest {
+    // for post form
     init?(url: URL, form: PostForm) {
         guard let data = form.data else { return nil }
         
@@ -61,13 +73,23 @@ extension URLRequest {
         addValue(form.contentType, forHTTPHeaderField: "Content-Type")
     }
     
-    // TODO: - Initializer for GraphQL query
+    // for graphql query
+    init?(graph: GraphQLObject) {
+        guard let body = graph.body() else { return nil }
+        
+        self.init(url: URL(string: "https://leetcode.com/graphql/")!)
+        
+        httpMethod = "POST"
+        httpBody = body
+        addValue("application/json", forHTTPHeaderField: "Content-Type")
+    }
 }
 
 // MAKR: - Equtable for APIError
 func ==(l: APIError, r: APIError) -> Bool {
     switch (l, r) {
-    case (.empty, .empty), (.decode, .decode), (.invalidResponse, .invalidResponse), (.badGraphQuery, .badGraphQuery), (.interrupted, .interrupted):
+    case (.empty, .empty), (.decode, .decode), (.invalidResponse, .invalidResponse),
+         (.badGraphQuery, .badGraphQuery), (.interrupted, .interrupted), (.invalidQuery, .invalidQuery):
         return true
     case let (.requestError(n), .requestError(m)):
         return m == n

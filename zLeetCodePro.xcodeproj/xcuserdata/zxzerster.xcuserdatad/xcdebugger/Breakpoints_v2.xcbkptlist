@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A827C90F-FE16-4A47-ACA5-2CA33528D5EE"
-            shouldBeEnabled = "Yes"
+            uuid = "EF7FD19B-B6F2-471D-AF9E-079F2B85325D"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "zLeetCodePro/LeetCodeService/LeetCodeService.swift"
+            filePath = "zLeetCodePro/Views/Login.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "login(name:password:completionHandler:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "login(name:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06D0DBAC-6974-48DD-9296-B77F3894B204"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zLeetCodePro/Views/Login.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "login(name:password:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

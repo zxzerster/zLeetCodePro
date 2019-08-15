@@ -28,13 +28,13 @@ extension URLSession {
             
             do {
                 guard let parsed = try resource.parse(data, response) else {
-                    completionHandler(.failure(.decode))
+                    completionHandler(.failure(.parse))
                     return
                 }
                 
                 completionHandler(.success(parsed))
             } catch {
-                completionHandler(.failure(.decode))
+                completionHandler(.failure(.decode(error)))
             }
         }.resume()
     }

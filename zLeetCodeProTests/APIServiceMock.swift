@@ -26,7 +26,7 @@ class APIServiceMock {
             
             completionHandler(.success(parsed))
         } catch {
-            completionHandler(.failure(.decode))
+            completionHandler(.failure(.decode(error)))
         }
     }
 
