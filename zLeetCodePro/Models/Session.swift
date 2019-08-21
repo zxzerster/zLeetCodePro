@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LeetCodeSession {
+struct Session {
     let token: String?
     let session: String?
 }

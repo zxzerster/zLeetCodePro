@@ -36,13 +36,13 @@ class zLeetCodeProTests: XCTestCase {
     
     func testResourceDecodeFailure() {
         let resource = Resource<String>(request: URLRequest(url: URL(string: "https://google.com")!)) { (_, _) -> String? in
-            throw APIError.decode
+            throw APIError.invalidCredential
         }
         
         APIServiceMock.shared.load(from: resource) { result in
             switch result {
             case .failure(let error):
-                XCTAssert(error == APIError.decode)
+                XCTAssert(error == APIError.invalidCredential)
             case .success:
                 XCTAssert(false)
             }

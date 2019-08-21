@@ -10,9 +10,18 @@ import Foundation
 
 extension HTTPCookieStorage {
     func cookie(name: String, for url: URL) -> String? {
-        guard let cookies = HTTPCookieStorage.shared.cookies(for: url) else { return nil }
+        guard let cookies = cookies(for: url) else { return nil }
         
         return cookies.filter { $0.name == name }.first?.value
+    }
+    
+    func deleteCookie(name: String, for url: URL) {
+        guard let cookies = cookies(for: url) else { return }
+        
+        let cookie = cookies.filter { $0.name == name }.first
+        if let cookie = cookie {
+            deleteCookie(cookie)
+        }
     }
 }
 

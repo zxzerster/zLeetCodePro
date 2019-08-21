@@ -27,14 +27,8 @@ struct TopicTag: Decodable {
     let isEnabled: Bool
 }
 
-struct AllProblemsWrapper: Decodable {
-    struct Data: Decodable {
-        let allQuestions: [Problem]
-    }
-    
-    let data: Data
-    
-    var value: [Problem] {
-        data.allQuestions
+extension Array: QueryResponseValueKey where Element == Problem {
+    static var key: QueryResponseKey {
+        QueryResponseKey(stringValue: "allQuestions")!
     }
 }

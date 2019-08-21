@@ -12,7 +12,7 @@ import Combine
 class UserInfoModel: ObservableObject {
     let objectWillChange = PassthroughSubject<Void, Never>()
     
-    var userInfo: LeetCodeSession? {
+    var userInfo: Session? {
         willSet {
             DispatchQueue.main.async {
                 self.objectWillChange.send()
@@ -43,22 +43,24 @@ class UserInfoModel: ObservableObject {
             switch result {
             case .failure(let error):
                 self.error = error
+                print("login error: \(error)")
             case .success(let info):
                 self.userInfo = info
                 let query = GraphQLObject(query: USER_STATUS)
-                LeetCodeService.shared.graphQLQuery(query: query) { (result: Result<UserWrapper, APIError>) in
+                LeetCodeService.shared.graphQLQuery(query: query) { (result: Result<QueryResponse<UserStatus>, APIError>) in
                     switch result {
                     case .failure(let error):
                         print(error)
                     case .success(let wrapper):
-                        print(wrapper.value.realName)
+                        print(wrapper.value.username + " --- " + wrapper.value.realName)
                         let allProblmes = GraphQLObject(query: ALL_PROBLEMS)
-                        LeetCodeService.shared.graphQLQuery(query: allProblmes) { (result: Result<AllProblemsWrapper, APIError>) in
+                        LeetCodeService.shared.graphQLQuery(query: allProblmes) { (result: Result<QueryResponse<[Problem]>, APIError>) in
                             switch result {
                             case .failure(let error):
                                 print(error)
                             case .success(let all):
                                 print(all.value)
+                                LeetCodeService.shared.logout()
                             }
                         }
                     }

@@ -89,7 +89,8 @@ extension URLRequest {
 func ==(l: APIError, r: APIError) -> Bool {
     switch (l, r) {
     case (.empty, .empty), (.decode, .decode), (.invalidResponse, .invalidResponse),
-         (.badGraphQuery, .badGraphQuery), (.interrupted, .interrupted), (.invalidQuery, .invalidQuery):
+         (.badGraphQuery, .badGraphQuery), (.interrupted, .interrupted), (.invalidQuery, .invalidQuery),
+         (.invalidCredential, .invalidCredential):
         return true
     case let (.requestError(n), .requestError(m)):
         return m == n

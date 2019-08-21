@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5D1DDE39230583BD0075C411 /* Querys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DDE38230583BD0075C411 /* Querys.swift */; };
-		5D1DDE3B2305896B0075C411 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DDE3A2305896B0075C411 /* User.swift */; };
-		5D1DDE3D23058EBC0075C411 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DDE3C23058EBC0075C411 /* Problem.swift */; };
+		5D1DDE3B2305896B0075C411 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DDE3A2305896B0075C411 /* UserStatus.swift */; };
+		5D1DDE3D23058EBC0075C411 /* AllProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DDE3C23058EBC0075C411 /* AllProblems.swift */; };
 		5D38563B230312E800101028 /* Cookie+LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38563A230312E800101028 /* Cookie+LeetCode.swift */; };
-		5D88EC8A2302E444007D33C8 /* LeetCodeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* LeetCodeSession.swift */; };
-		5D88EC8B2302E444007D33C8 /* LeetCodeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* LeetCodeSession.swift */; };
+		5D88EC8A2302E444007D33C8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* Session.swift */; };
+		5D88EC8B2302E444007D33C8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* Session.swift */; };
 		5D88EC8E2302E4AC007D33C8 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88EC8D2302E4AC007D33C8 /* Login.swift */; };
 		5DCBDE6023018CB700C3E6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */; };
 		5DCBDE6223018CB700C3E6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDE6123018CB700C3E6CD /* SceneDelegate.swift */; };
@@ -37,7 +37,8 @@
 		5DCBDEA32301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
 		5DCBDEA42301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
 		5DCBDEA52301BF0400C3E6CD /* LeetCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */; };
-		5DCBDEA82302D88600C3E6CD /* LeetCodeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* LeetCodeSession.swift */; };
+		5DCBDEA82302D88600C3E6CD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* Session.swift */; };
+		5DF4DE1C230C200300D93F76 /* QueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4DE1B230C200300D93F76 /* QueryResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +60,8 @@
 
 /* Begin PBXFileReference section */
 		5D1DDE38230583BD0075C411 /* Querys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Querys.swift; sourceTree = "<group>"; };
-		5D1DDE3A2305896B0075C411 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		5D1DDE3C23058EBC0075C411 /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		5D1DDE3A2305896B0075C411 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
+		5D1DDE3C23058EBC0075C411 /* AllProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProblems.swift; sourceTree = "<group>"; };
 		5D38563A230312E800101028 /* Cookie+LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cookie+LeetCode.swift"; sourceTree = "<group>"; };
 		5D88EC8D2302E4AC007D33C8 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		5DCBDE5C23018CB700C3E6CD /* zLeetCodePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zLeetCodePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +83,8 @@
 		5DCBDE9923019AC200C3E6CD /* URLSession+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Resource.swift"; sourceTree = "<group>"; };
 		5DCBDE9D2301A0A200C3E6CD /* APIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMock.swift; sourceTree = "<group>"; };
 		5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeService.swift; sourceTree = "<group>"; };
-		5DCBDEA72302D88600C3E6CD /* LeetCodeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeSession.swift; sourceTree = "<group>"; };
+		5DCBDEA72302D88600C3E6CD /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		5DF4DE1B230C200300D93F76 /* QueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,9 +208,10 @@
 		5DCBDEA62302D86E00C3E6CD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5DCBDEA72302D88600C3E6CD /* LeetCodeSession.swift */,
-				5D1DDE3A2305896B0075C411 /* User.swift */,
-				5D1DDE3C23058EBC0075C411 /* Problem.swift */,
+				5DCBDEA72302D88600C3E6CD /* Session.swift */,
+				5D1DDE3A2305896B0075C411 /* UserStatus.swift */,
+				5D1DDE3C23058EBC0075C411 /* AllProblems.swift */,
+				5DF4DE1B230C200300D93F76 /* QueryResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -344,19 +347,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1DDE3B2305896B0075C411 /* User.swift in Sources */,
+				5D1DDE3B2305896B0075C411 /* UserStatus.swift in Sources */,
 				5DCBDE9E2301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
 				5D88EC8E2302E4AC007D33C8 /* Login.swift in Sources */,
 				5DCBDE6023018CB700C3E6CD /* AppDelegate.swift in Sources */,
+				5DF4DE1C230C200300D93F76 /* QueryResponse.swift in Sources */,
 				5D38563B230312E800101028 /* Cookie+LeetCode.swift in Sources */,
 				5DCBDE962301920700C3E6CD /* Resource+Utils.swift in Sources */,
 				5DCBDE9A23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
-				5D1DDE3D23058EBC0075C411 /* Problem.swift in Sources */,
+				5D1DDE3D23058EBC0075C411 /* AllProblems.swift in Sources */,
 				5DCBDE9223018E6500C3E6CD /* Resource.swift in Sources */,
 				5DCBDE6223018CB700C3E6CD /* SceneDelegate.swift in Sources */,
 				5D1DDE39230583BD0075C411 /* Querys.swift in Sources */,
 				5DCBDEA32301BF0400C3E6CD /* LeetCodeService.swift in Sources */,
-				5DCBDEA82302D88600C3E6CD /* LeetCodeSession.swift in Sources */,
+				5DCBDEA82302D88600C3E6CD /* Session.swift in Sources */,
 				5DCBDE6423018CB700C3E6CD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +374,7 @@
 				5DCBDE7723018CB800C3E6CD /* zLeetCodeResourceTests.swift in Sources */,
 				5DCBDE9B23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
 				5DCBDE9F2301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
-				5D88EC8A2302E444007D33C8 /* LeetCodeSession.swift in Sources */,
+				5D88EC8A2302E444007D33C8 /* Session.swift in Sources */,
 				5DCBDE9323018E6500C3E6CD /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +388,7 @@
 				5DCBDE8223018CB800C3E6CD /* zLeetCodeProUITests.swift in Sources */,
 				5DCBDE9C23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
 				5DCBDEA02301A0A200C3E6CD /* APIServiceMock.swift in Sources */,
-				5D88EC8B2302E444007D33C8 /* LeetCodeSession.swift in Sources */,
+				5D88EC8B2302E444007D33C8 /* Session.swift in Sources */,
 				5DCBDE9423018E6500C3E6CD /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
