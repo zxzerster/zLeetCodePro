@@ -37,34 +37,12 @@ class UserInfoModel: ObservableObject {
     }
     
     func login(name: String, password: String) {
-        querying = true
-        LeetCodeService.shared.login(name: name, password: password) { (result) in
-            self.querying = false
+        LeetCodeService.shared.signup(name: "zxzerster-signup-test", password: "123abccba321", email: "zxzerster-lee123@gmail.com") { (result) in
             switch result {
             case .failure(let error):
-                self.error = error
-                print("login error: \(error)")
-            case .success(let info):
-                self.userInfo = info
-                let query = GraphQLObject(query: USER_STATUS)
-                LeetCodeService.shared.graphQLQuery(query: query) { (result: Result<QueryResponse<UserStatus>, APIError>) in
-                    switch result {
-                    case .failure(let error):
-                        print(error)
-                    case .success(let wrapper):
-                        print(wrapper.value.username + " --- " + wrapper.value.realName)
-                        let allProblmes = GraphQLObject(query: ALL_PROBLEMS)
-                        LeetCodeService.shared.graphQLQuery(query: allProblmes) { (result: Result<QueryResponse<[Problem]>, APIError>) in
-                            switch result {
-                            case .failure(let error):
-                                print(error)
-                            case .success(let all):
-                                print(all.value)
-                                LeetCodeService.shared.logout()
-                            }
-                        }
-                    }
-                }
+                print(error)
+            case .success(let session):
+                print("[token]: \(session.token)\n[session]: \(session.session)")
             }
         }
     }

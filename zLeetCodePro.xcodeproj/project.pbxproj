@@ -11,6 +11,8 @@
 		5D1DDE3B2305896B0075C411 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DDE3A2305896B0075C411 /* UserStatus.swift */; };
 		5D1DDE3D23058EBC0075C411 /* AllProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DDE3C23058EBC0075C411 /* AllProblems.swift */; };
 		5D38563B230312E800101028 /* Cookie+LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38563A230312E800101028 /* Cookie+LeetCode.swift */; };
+		5D70DAB3230D6D02006BD4AF /* LeetCodeService+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D70DAB2230D6D02006BD4AF /* LeetCodeService+Account.swift */; };
+		5D70DAB5230D6D6C006BD4AF /* LeetCodeService+GraphQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D70DAB4230D6D6C006BD4AF /* LeetCodeService+GraphQL.swift */; };
 		5D88EC8A2302E444007D33C8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* Session.swift */; };
 		5D88EC8B2302E444007D33C8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBDEA72302D88600C3E6CD /* Session.swift */; };
 		5D88EC8E2302E4AC007D33C8 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88EC8D2302E4AC007D33C8 /* Login.swift */; };
@@ -63,6 +65,8 @@
 		5D1DDE3A2305896B0075C411 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
 		5D1DDE3C23058EBC0075C411 /* AllProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProblems.swift; sourceTree = "<group>"; };
 		5D38563A230312E800101028 /* Cookie+LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cookie+LeetCode.swift"; sourceTree = "<group>"; };
+		5D70DAB2230D6D02006BD4AF /* LeetCodeService+Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeetCodeService+Account.swift"; sourceTree = "<group>"; };
+		5D70DAB4230D6D6C006BD4AF /* LeetCodeService+GraphQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeetCodeService+GraphQL.swift"; sourceTree = "<group>"; };
 		5D88EC8D2302E4AC007D33C8 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		5DCBDE5C23018CB700C3E6CD /* zLeetCodePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zLeetCodePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCBDE5F23018CB700C3E6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				5DCBDEA22301BF0400C3E6CD /* LeetCodeService.swift */,
+				5D70DAB2230D6D02006BD4AF /* LeetCodeService+Account.swift */,
+				5D70DAB4230D6D6C006BD4AF /* LeetCodeService+GraphQL.swift */,
 				5D38563A230312E800101028 /* Cookie+LeetCode.swift */,
 			);
 			path = LeetCodeService;
@@ -353,6 +359,7 @@
 				5DCBDE6023018CB700C3E6CD /* AppDelegate.swift in Sources */,
 				5DF4DE1C230C200300D93F76 /* QueryResponse.swift in Sources */,
 				5D38563B230312E800101028 /* Cookie+LeetCode.swift in Sources */,
+				5D70DAB3230D6D02006BD4AF /* LeetCodeService+Account.swift in Sources */,
 				5DCBDE962301920700C3E6CD /* Resource+Utils.swift in Sources */,
 				5DCBDE9A23019AC200C3E6CD /* URLSession+Resource.swift in Sources */,
 				5D1DDE3D23058EBC0075C411 /* AllProblems.swift in Sources */,
@@ -360,6 +367,7 @@
 				5DCBDE6223018CB700C3E6CD /* SceneDelegate.swift in Sources */,
 				5D1DDE39230583BD0075C411 /* Querys.swift in Sources */,
 				5DCBDEA32301BF0400C3E6CD /* LeetCodeService.swift in Sources */,
+				5D70DAB5230D6D6C006BD4AF /* LeetCodeService+GraphQL.swift in Sources */,
 				5DCBDEA82302D88600C3E6CD /* Session.swift in Sources */,
 				5DCBDE6423018CB700C3E6CD /* ContentView.swift in Sources */,
 			);
