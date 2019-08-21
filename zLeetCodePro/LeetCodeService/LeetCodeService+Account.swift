@@ -93,6 +93,9 @@ extension LeetCodeService {
                 return combined.asInterrupt(.failure(.invalidResponse))
             }
             
+            HTTPCookieStorage.shared.deleteCookie(name: "csrftoken", for: url)
+            HTTPCookieStorage.shared.deleteCookie(name: "LEETCODE_SESSION", for: url)
+            
             let form = PostForm([
                 "csrfmiddlewaretoken": token, "username": name, "password1": password, "password2": password, "email": email
             ])

@@ -33,8 +33,10 @@ extension URLSession {
                 }
                 
                 completionHandler(.success(parsed))
+            } catch let error as APIError {
+                completionHandler(.failure(error))
             } catch {
-                completionHandler(.failure(.decode(error)))
+                fatalError("unexpected error: \(error)")
             }
         }.resume()
     }

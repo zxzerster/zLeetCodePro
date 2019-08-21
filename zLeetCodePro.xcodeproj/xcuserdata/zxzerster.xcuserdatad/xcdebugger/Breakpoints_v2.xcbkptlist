@@ -20,5 +20,149 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BB68AC3-E134-4790-ABEF-265C67F99537"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zLeetCodePro/Network/Resource+Utils.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "==(_:_:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "8BB68AC3-E134-4790-ABEF-265C67F99537 - 401a28babdbbd0ff"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zLeetCodePro.== infix(zLeetCodePro.APIError, zLeetCodePro.APIError) -&gt; Swift.Bool"
+                  moduleName = "zLeetCodePro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zxzerster/Documents/dev/zLeetCodePro/zLeetCodePro/Network/Resource+Utils.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "103">
+               </Location>
+               <Location
+                  uuid = "8BB68AC3-E134-4790-ABEF-265C67F99537 - 358fd100a1020c69"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zLeetCodeProTests.== infix(zLeetCodeProTests.APIError, zLeetCodeProTests.APIError) -&gt; Swift.Bool"
+                  moduleName = "zLeetCodeProTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zxzerster/Documents/dev/zLeetCodePro/zLeetCodePro/Network/Resource+Utils.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "103">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "900FF0B5-8C1F-4B58-A48F-4C52FBD2F1C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zLeetCodeProTests/APIServiceMock.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "load(from:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "900FF0B5-8C1F-4B58-A48F-4C52FBD2F1C7 - da4e77123e396e8b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zLeetCodePro.APIServiceMock.load&lt;A&gt;(from: zLeetCodePro.Resource&lt;A&gt;, completionHandler: (Swift.Result&lt;A, zLeetCodePro.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "zLeetCodePro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zxzerster/Documents/dev/zLeetCodePro/zLeetCodeProTests/APIServiceMock.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1706">
+               </Location>
+               <Location
+                  uuid = "900FF0B5-8C1F-4B58-A48F-4C52FBD2F1C7 - b1f738150a6e2ba2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zLeetCodeProTests.APIServiceMock.load&lt;A&gt;(from: zLeetCodeProTests.Resource&lt;A&gt;, completionHandler: (Swift.Result&lt;A, zLeetCodeProTests.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "zLeetCodeProTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zxzerster/Documents/dev/zLeetCodePro/zLeetCodeProTests/APIServiceMock.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1706">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "228B8E26-EC86-4008-9E33-DC91D67F0261"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zLeetCodeProTests/APIServiceMock.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "load(from:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "228B8E26-EC86-4008-9E33-DC91D67F0261 - da4e77123e396e8b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zLeetCodePro.APIServiceMock.load&lt;A&gt;(from: zLeetCodePro.Resource&lt;A&gt;, completionHandler: (Swift.Result&lt;A, zLeetCodePro.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "zLeetCodePro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zxzerster/Documents/dev/zLeetCodePro/zLeetCodeProTests/APIServiceMock.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1934">
+               </Location>
+               <Location
+                  uuid = "228B8E26-EC86-4008-9E33-DC91D67F0261 - b1f738150a6e2ba2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zLeetCodeProTests.APIServiceMock.load&lt;A&gt;(from: zLeetCodeProTests.Resource&lt;A&gt;, completionHandler: (Swift.Result&lt;A, zLeetCodeProTests.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "zLeetCodeProTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zxzerster/Documents/dev/zLeetCodePro/zLeetCodeProTests/APIServiceMock.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1934">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

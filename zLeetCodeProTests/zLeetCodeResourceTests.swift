@@ -42,7 +42,7 @@ class zLeetCodeProTests: XCTestCase {
         APIServiceMock.shared.load(from: resource) { result in
             switch result {
             case .failure(let error):
-                XCTAssert(error == APIError.invalidCredential)
+                XCTAssert(error == .invalidCredential)
             case .success:
                 XCTAssert(false)
             }
